@@ -1,0 +1,31 @@
+{
+  "name": "@dot-simple/backend",
+  "version": "1.0.2",
+  "description": "",
+  "bin": "./bin/cli.js",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.1",
+    "mongoose": "^6.1.3",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/HaseebUllahAbbasi/node_backend_public_template"
+  },
+  
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "postinstall": "npx husky install",
+    "start": "nodemon ./server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon ./server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon ./server"
+  },
+  "author": "",
+  "license": "ISC"
+}
